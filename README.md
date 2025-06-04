@@ -57,3 +57,14 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## ajouter des pages
+ng g component features/home/home-page
+
+## Créer un service 
+ng g service core/services/auth.service
+ng g service core/services/recipe.service
+
+## Créer un model 
+ng g interface core/models/user
+ng g interface core/models/recipe
