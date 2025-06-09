@@ -1,2 +1,13 @@
-<p>home-page works!</p>
-<app-page-layout-component>Il pleut </app-page-layout-component>
+
+<app-page-layout-component>
+    <h2>Liste des catégories </h2> 
+<app-recipe-category [categories]="categories()" (categorieOutput)="changeCategorie($event)"></app-recipe-category>
+
+@for (recipe of (recipesResource.value()); track recipe.idMeal) {
+    
+   <app-recipe-card [title]="recipe.strMeal" [urlImage]="recipe.strMealThumb"></app-recipe-card>
+}
+
+    
+
+</app-page-layout-component>

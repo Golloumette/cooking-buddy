@@ -1,0 +1,10 @@
+<p>Liste des catégories d'ingrédients</p>
+
+<mat-select (selectionChange)="changeCategorie($event)">
+    
+        @for (categorie of (categories()); track categorie) {
+<mat-option [value]="categorie">{{ categorie }}</mat-option>
+        }
+
+        
+</mat-select>

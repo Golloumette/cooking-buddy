@@ -60,6 +60,9 @@ For more information on using the Angular CLI, including detailed command refere
 
 ## ajouter des pages
 ng g component features/home/home-page
+ng g component features/home/recipeCategory
+ng g component features/home/recipeCategories
+ng g component features/home/recipeCard
 
 ## Créer un service 
 ng g service core/services/auth.service
